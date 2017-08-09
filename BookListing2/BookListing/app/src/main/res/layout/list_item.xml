@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666666"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentyd"
+        android:layout_marginTop="@dimen/twentyd"
+        android:fontFamily="monospace"
+        android:text="TITLE"
+        android:textColor="#FFF"
+        android:textSize="@dimen/thirtys" />
+
+    <TextView
+        android:id="@+id/authors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentyd"
+        android:layout_marginTop="@dimen/tend"
+        android:fontFamily="serif-monospace"
+        android:text="AUTHOR/AUTHORS"
+        android:textColor="#e5e5e5"
+        android:textSize="@dimen/thirtys" />
+
+    <TextView
+        android:id="@+id/publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentyd"
+        android:layout_marginTop="@dimen/tend"
+        android:text="PUBLISHER"
+        android:textColor="#cccccc"
+        android:textSize="@dimen/twentys"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentyd"
+        android:layout_marginTop="@dimen/tend"
+        android:fontFamily="monospace"
+        android:text="DESCRIPTION"
+        android:textColor="#cccccc"
+        android:textSize="@dimen/twentys"
+        android:textStyle="italic" />
+
+</LinearLayout>

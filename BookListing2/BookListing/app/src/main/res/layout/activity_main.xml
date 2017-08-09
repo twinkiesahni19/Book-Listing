@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666666"
+    android:orientation="vertical"
+    tools:context="com.example.android.booklisting.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fived"
+            android:fontFamily="monospace"
+            android:text="Welcome to Book Listing Application !!"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="@dimen/twentyfive" />
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tend"
+            android:layout_marginTop="@dimen/fourd"
+            android:fontFamily="serif-monospace"
+            android:textColor="#FFF"
+            android:textSize="@dimen/twentys" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/twentyfive"
+            android:layout_marginLeft="@dimen/tend"
+            android:layout_marginTop="@dimen/tend"
+            android:background="#ff9575"
+            android:onClick="Search"
+            android:paddingBottom="@dimen/fived"
+            android:paddingLeft="@dimen/fived"
+            android:paddingRight="@dimen/fived"
+            android:paddingTop="@dimen/fived"
+            android:text="@string/Search"
+            android:textSize="@dimen/eighteens" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>
